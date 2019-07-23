@@ -1,11 +1,12 @@
 {
-  "homepage": "https://umkilyong.github.io/portfolio",
+  "homepage": "https://umkilyong.github.io/blog",
   "name": "my_portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "cross-env": "^5.2.0",
     "gh-pages": "^2.0.1",
+    "query-string": "^6.8.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-redux": "^5.1.1",
@@ -16,7 +17,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "cross-env NODE_PATH=src react-scripts start",
     "build": "cross-env NODE_PATH=src react-scripts build",
     "test": "react-scripts test --env=jsdom",
