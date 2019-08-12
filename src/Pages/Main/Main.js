@@ -3,9 +3,7 @@ import {Route} from "react-router";
 import {NavLink} from "react-router-dom";
 
 import LNB from "../../Components/LNB";
-import Portfolio from "../Portfolio/Portfolio";
-import TechGit from "../Tech/Git/TechGit";
-import TechReact from "../Tech/React/TechReact";
+import About from "../About/About";
 
 export default class Main extends Component {
     constructor(props) {
@@ -22,11 +20,10 @@ export default class Main extends Component {
                 <LNB/>
 
                 <div className="content-wrapper">
-                    <Route exact path={"/"} component={Portfolio} />
-                    <Route path={"/portfolio"} component={Portfolio} />
-                    {/*<Route path={"/tech"} component={TechGit} />*/}
-                    <Route path={"/tech/git"} component={TechGit} />
-                    <Route path={"/tech/react"} component={TechReact} />
+                    <Route exact path={"/"} component={About} />
+                    <Route path={"/about"} component={About} />
+                    {/*<Route path={"/career"} component={Career} />*/}
+                    {/*<Route path={"/project"} component={Project} />*/}
                 </div>
             </div>
         )

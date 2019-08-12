@@ -6,29 +6,19 @@ const LNB = () => {
         <div className="lnb">
             <ul>
                 <li>
-                    <h4>포트폴리오</h4>
-                    <ul>
-                        <li>
-                            <NavLink to={"/portfolio"} activeStyle={{fontWeight : "bold"}}>
-                                <h5>포트폴리오</h5>
-                            </NavLink>
-                        </li>
-                    </ul>
+                    <NavLink to={"/about"} activeStyle={{fontWeight : "bold"}}>
+                        <h4>About</h4>
+                    </NavLink>
                 </li>
                 <li>
-                    <h4>Tech</h4>
-                    <ul>
-                        <li>
-                            <NavLink to={"/tech/git"} activeStyle={{fontWeight : "bold"}}>
-                                <h5>Git</h5>
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink to={"/tech/react"} activeStyle={{fontWeight : "bold"}}>
-                                <h5>React</h5>
-                            </NavLink>
-                        </li>
-                    </ul>
+                    <NavLink to={"/career"} activeStyle={{fontWeight : "bold"}}>
+                        <h4>Career</h4>
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to={"/project"} activeStyle={{fontWeight : "bold"}}>
+                        <h4>project</h4>
+                    </NavLink>
                 </li>
             </ul>
         </div>
